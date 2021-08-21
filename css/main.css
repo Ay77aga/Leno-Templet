@@ -1,5 +1,7 @@
 :root {
-  --main-color: #1DC8CE;
+  --main-color: #10cab7;
+  --second-color: #ced7df;
+  --ther-color: #8D8D8D;
 }
 
 * {
@@ -28,6 +30,10 @@ body {
   .container {
     width: 750px;
   }
+
+  .go-top {
+    right: 40%
+  }
 }
 
 /* Medium */
@@ -45,7 +51,6 @@ body {
 }
 
 /* End Global Rules */
-
 header {
   display: flex;
   align-items: center;
@@ -182,17 +187,22 @@ ul li:hover {
   line-height: 1.8;
 }
 
+.contact,
+.portfolio,
 .features {
-  width: 100%;
+  margin-top: 80px;
+  padding: 15px;
   background: #eee;
+}
 
+.features {
+  margin-top: 0;
 }
 
 .features .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 10px;
-  border: 4px solid #023
+  gap: 15px;
 }
 
 .features .container div {
@@ -212,4 +222,207 @@ ul li:hover {
 .features .container .feat {
   max-width: 300px;
   margin: 20px;
+}
+
+.features .container .feat p {
+  color: var(--ther-color);
+}
+
+
+.sp-title {
+  text-align: center;
+  line-height: .5;
+  margin-bottom: 100px;
+}
+
+.sp-title h1 {
+  letter-spacing: -4px;
+  font-size: 80px;
+  font-weight: 800;
+  color: var(--second-color);
+}
+
+.sp-title p {
+  font-size: 20px;
+  margin-top: -45px;
+  word-spacing: 2px;
+  color: var(--ther-color)
+}
+
+.services,
+.about {
+  margin-top: 150px;
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px
+}
+
+.services .container .serv {
+  text-align: center;
+  margin-top: 30px
+}
+
+.services .container .serv i {
+  font-size: 40px;
+  color: var(--main-color);
+}
+
+.services .container .serv p {
+  color: var(--ther-color)
+}
+
+
+.portfolio .container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+
+}
+
+.portfolio .container .port {
+  background: #fff;
+  padding: 15px;
+}
+
+.portfolio .container .port p {
+  color: var(--ther-color)
+}
+
+img {
+  transition: .5s;
+  max-width: 100%;
+}
+
+.ho {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.port:hover img {
+  transform: scale(1.4) rotateZ(10deg);
+}
+
+.gg {
+  width: 70%;
+  margin: auto;
+}
+
+.about .container span {
+  display: block;
+  width: 50%;
+  margin: 40px auto;
+  border: 1px inset var(--main-color);
+}
+
+.about .container p {
+  line-height: 2;
+  text-align: center;
+}
+
+.about .container p:nth-child(2) {
+  font-weight: bold;
+}
+
+.about .container p:last-child {
+  color: var(--ther-color);
+}
+
+
+.contact .container form input,
+textarea {
+  width: 100%;
+  margin: 20px auto;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 2rem;
+  padding: 15px;
+  font-weight: bold;
+
+}
+
+.contact .container form input:focus::placeholder,
+.txt-ar:focus::placeholder {
+  padding-left: 20px;
+  transition: .3s;
+  color: var(--main-color);
+}
+
+.contact .container form input:focus,
+.txt-ar:focus {
+  box-shadow: 0 0 8px 1px var(--main-color);
+
+}
+
+.contact .container form input:last-child {
+  width: 50%;
+  background-color: var(--main-color);
+  margin: auto 25%;
+  color: snow;
+}
+
+.contact .container .p {
+  color: #2c4755;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: -3px;
+}
+
+.contact .container a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.cc {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.contact .container .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .container .social i {
+  padding: 5px;
+}
+
+footer {
+  padding: 15px;
+  background: #2c4755;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer span {
+  font-weight: 900;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.go-top {
+  position: absolute;
+  bottom: 30px;
+  right: 5px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 1rem;
+  font-size: 16px;
+  text-decoration: none;
+  color: snow;
+  font-weight: 900;
+  background-color: var(--main-color);
 }
