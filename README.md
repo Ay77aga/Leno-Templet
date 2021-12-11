@@ -1,3 +1,2 @@
-# EL-Zero Web School 
-![Image of Yaktocat](images/readme.jpg)
-#
+# Leno-Templet
+## Preview [Hear](https://ay77aga.github.io/Leno-Templet/)
